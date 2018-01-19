@@ -1,0 +1,23 @@
+body{
+  position: fixed;
+  margin-top: 10%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr, auto, auto, 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1em;
+}
+
+.cube{
+  transition: 0.5s;
+  transform: translateX(-10vw);
+  background-color: gray;
+  width: 6em;
+  height: 5em;
+  transition: transform .6 cubic-bezier(.17,.67,.71,1.29);
+}
+
+.cube-moveout{
+  transform: translateX(0.5vw);
+}
